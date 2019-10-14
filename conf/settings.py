@@ -25,7 +25,7 @@ SECRET_KEY = 't1kwvl)ex46h(loqt_8cq7%*n0qbtd$!g&ww&ty_in6zqyvip8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'accounts.apps.AccountsConfig',
     'survey.apps.SurveyConfig',
